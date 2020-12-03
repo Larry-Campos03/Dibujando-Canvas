@@ -9,14 +9,46 @@ const dibujarLineas = (color, xInicial, yInicial, xFinal, yFinal, lienzo) =>{
 }
 
 
+const dedoAbajo = (evento) =>{
+
+    coorX = evento.layerX;
+    coorY = evento.layerY;
+    estado = true;
+}
+
+
+const moverMouse = (evento)  =>{
+    if (estado){ 
+        dibujarLineas("blue", coorX, coorY, evento.layerX, evento.layerY, cuadroDibujo);
+        coorX = evento.layerX;
+        coorY = evento.layerY; 
+    }
+}
+
+const dedoArriba = () =>{
+    coorX = 0;
+    coorY = 0;
+    estado = false
+}
+
 
 
 // Variables
-let dibujo = document.getElementById("areaDibujo");
-let cuadroDibujo = dibujo.getContext("2d");
+const dibujo = document.getElementById("areaDibujo");
+const cuadroDibujo = dibujo.getContext("2d");
+let coorX = 0;
+let coorY = 0;
+let estado = false;
 
-let movimiento = 10;
+ 
 
 // Evento
-dibujo.addEventListener("mousedown", dibujarClick);
+dibujo.addEventListener("mousedown", dedoAbajo);
+dibujo.addEventListener("mousemove", moverMouse);
+dibujo.addEventListener("mouseup", dedoArriba);
 
+
+dibujarLineas('red', 0, 0, 300, 0, cuadroDibujo);
+dibujarLineas('red', 300, 0, 300, 300, cuadroDibujo);
+dibujarLineas('red', 300, 300, 0, 300, cuadroDibujo);
+dibujarLineas('red', 0, 300, 0, 0, cuadroDibujo);
