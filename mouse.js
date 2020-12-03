@@ -1,6 +1,3 @@
-
-
-
 const dibujarLineas = (color, xInicial, yInicial, xFinal, yFinal, lienzo) =>{
     lienzo.beginPath();
     lienzo.strokeStryle = color;
@@ -12,21 +9,14 @@ const dibujarLineas = (color, xInicial, yInicial, xFinal, yFinal, lienzo) =>{
 }
 
 
-const dibujarClick = (evento) =>{
-    console.log(evento);
-    console.log(evento.layerX);
-} 
-
-
 
 
 // Variables
 let dibujo = document.getElementById("areaDibujo");
-let lienzo = dibujo.getContext("2d");
-let coorX;
-let cooY;
+let cuadroDibujo = dibujo.getContext("2d");
+
 let movimiento = 10;
 
 // Evento
-dibujo.addEventListener("mouseup", dibujarClick);
+dibujo.addEventListener("mousedown", dibujarClick);
 
