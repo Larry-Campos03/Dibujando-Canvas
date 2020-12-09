@@ -1,5 +1,6 @@
+
 const  conseguirColor = () =>{
-    colorLineas = areTexto.value;
+    colorLineas = areTexto.value.toLowerCase();
     console.log(colorLineas);
 }
 
