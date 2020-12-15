@@ -1,0 +1,21 @@
+body{
+    background: rosybrown;
+}
+
+.contenedorPadre{
+    background: blue;
+    display: inline-block;
+    position: relative;
+    width: 600px;
+    height: auto;
+}
+
+.cajaUno{
+    position: absolute;
+    display: inline-block;
+}
+
+.cajaDos{
+    position: absolute;
+    display: inline-block;
+}
