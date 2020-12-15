@@ -51,7 +51,7 @@ const botonColor = document.getElementById("boton");
 const areTexto = document.getElementById("texto");
 let coorX = 0;
 let coorY = 0;
-let colorLineas = "yellow";
+let colorLineas;
 let estado = false;
 
  
