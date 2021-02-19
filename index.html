@@ -9,13 +9,21 @@
 <body>
     <div class="contenedorPadre">
         <div class="cajaUno">
-            <h1>Dibujar haciendo click</h1>
-            <canvas width="300" height="300" id="areaDibujo"></canvas>
+            <div class="hijo uno">
+                <h1>Dibujar haciendo click</h1>
+            </div>
+            <div class="hijo dos">
+                <canvas width="300" height="300" id="areaDibujo"></canvas>
+            </div>    
         </div>
         <div class="cajaDos">
-            <p>Oprima el click derecho para dibujar</p>
-            <input type="button" value="Haga click" id="boton">
-            <input type="text" name="" placeholder="Cual color quieres" id="texto">
+            <div class="hijo-dos uno">
+                <p>Oprima el click derecho para dibujar</p>
+            </div>
+            <div class="hijo-dos dos">
+                <input type="button" value="Haga click" id="boton">
+                <input type="text" name="" placeholder="Cual color quieres" id="texto">
+            </div>
         </div>
     </div>
     <script src="mouse.js"></script>

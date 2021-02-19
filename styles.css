@@ -10,6 +10,50 @@
 
 body .contenedorPadre{
   border: black solid 1px;
+  width: 410px;
+  height: 550px;
+  margin: 0 auto;
 }
 
+body .contenedorPadre .cajaUno{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+} 
 
+body .contenedorPadre .cajaUno .uno{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+body .contenedorPadre .cajaUno .dos{
+  margin-bottom: 30px;
+}
+
+body .contenedorPadre .cajaDos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body .contenedorPadre .cajaDos .uno{
+  margin-bottom: 15px;
+}
+
+body .contenedorPadre .cajaDos .dos{
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
+}
+
+body .contenedorPadre .cajaDos .dos #boton{
+  margin-left: 30px;
+}
+
+body .contenedorPadre .cajaDos .dos #texto{
+  margin-left: 47px;
+}
