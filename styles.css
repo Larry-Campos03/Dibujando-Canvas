@@ -5,14 +5,14 @@
   box-sizing: border-box;
   list-style: none;
   font-family: 'Open Sans', sans-serif;
-  background: #BAB8D6;
+  background: #E5E7E9;
 }
 
 body .contenedorPadre{
   border: black solid 1px;
-  width: 410px;
+  width: 450px;
   height: 550px;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 body .contenedorPadre .cajaUno{
